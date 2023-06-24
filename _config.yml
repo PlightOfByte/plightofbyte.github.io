@@ -1,3 +1,99 @@
-theme: jekyll-theme-minimal
-title: Octocat's homepage
-description: Bookmark this to keep an eye on my project updates!
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+#theme: jekyll-theme-minimal
+remote_theme: daattali/beautiful-jekyll@6.0.1
+
+
+title: Plight of Byte
+description: > # this means to ignore newlines until "baseurl:"
+  Read about the latest technology, how to use and what to use.
+  Here I tell my opinion over a technolgy.
+baseurl: /plightofbyte # place folder name if the site is served in a subfolder
+url: https://sumitgpt.github.io  # the base hostname and protocol for your site, e.g. http://example.com
+author: Sumit Gupta
+social-network-links:
+  github: sumitgpt
+  twitter: gptsumit
+  linkedin: thesumitgupta
+
+share-links-active:
+  twitter: true
+  facebook: true
+  linkedin: true
+
+post_search: true
+
+disqus: plightofbyte
+#gtag: "G-XXXXXXXXXX"
+paginate: 5
+markdown: kramdown
+timezone: "Asia/Kolkata"
+highlighter: rouge
+permalink: pretty
+
+domain: sumitgpt.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+repository: sumitgpt/plightofbyte
+
+# Build settings
+#theme: minima
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+navbar-links:
+  Home: /
+  About Me: "about-me"
+
+avatar: "/assets/images/profile.jpg"
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      image: ""
+      comments: true  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

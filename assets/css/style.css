@@ -1,0 +1,12 @@
+.center-image {
+    margin: 0 auto;
+    display: block;
+}
+
+.secret {
+    content: url("/assets/images/tap-to-reveal.png")
+}
+
+.secret:active {
+    content: unset;
+}
