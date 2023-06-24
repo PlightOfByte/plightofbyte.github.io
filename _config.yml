@@ -42,7 +42,7 @@ share-links-active:
 post_search: true
 
 disqus: plightofbyte
-#gtag: "G-XXXXXXXXXX"
+gtag: "G-DRVG4746TH"
 paginate: 5
 markdown: kramdown
 timezone: "Asia/Kolkata"
